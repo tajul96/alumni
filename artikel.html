@@ -63,7 +63,7 @@
 		background-image: url("https://drive.google.com/thumbnail?id=1SotfevARSR7b1lbHDHdzfxNxCGjmavKg");
 		background-size: cover;
 		background-position: center;
-		font-family: Calibri Light, San Serif;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		table-position: center;
 	}
 	
@@ -131,6 +131,60 @@ th {
     	text-decoration: none;
 		color: black;
   	}
+		.card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+            color: #000;
+        }
+
+        .meta-data {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .meta-data span {
+            color: #337ab7; /* Warna biru untuk username */
+            font-weight: bold;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .banner-image {
+            width: 320px;
+            border-radius: 5px;
+            flex-shrink: 0;
+        }
+
+        .article-text {
+            line-height: 1.6;
+            color: #444;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 600px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .banner-image {
+                width: 100%;
+            }
+		}
 	</style>
 </head>
 <body>
@@ -175,6 +229,22 @@ th {
 <h2><a href="alumni.html"><strong>Artikel3</strong></a></h2>
 <h3><a href="alumni.html"><img src="https://drive.google.com/thumbnail?id=1hjvpAkfVbd0Kuy25pES0nPyOA7fJd0C0"</a></img><br><a href="alumni.html">Warna web atau disebut juga hex adalah warna-warna yang digunakan dalam perancangan laman-laman web, dan juga cara mendeskripsikan dan melakukan spesifikasi dari warna-warna tersebut. Seorang penulis halaman web memiliki banyak kebebasan dalam memilih warna yang akan digunakan bagi elemen-elemen dokumen webnya.</a></h3>
 </div>
+	<br>
+	<div class="card">
+        <h1>Kegiatan Bulan Bahasa</h1>
+        
+        <div class="meta-data">
+            by <span>mr. teje</span> | 1/26/2025 01:55:00 PM
+        </div>
+
+        <div class="content-wrapper">
+            <img src="https://via.placeholder.com/320x180/FFA500/FFFFFF?text=Bulan+Bahasa" alt="Bulan Bahasa Banner" class="banner-image">
+            
+            <p class="article-text">
+                Bulan Bahasa tingkat SMP biasanya diadakan sebagai rangkaian kegiatan untuk meningkatkan kecintaan dan pemahaman terhadap bahasa Indonesia di kalangan siswa. Kegiatan yang biasanya dilakukan selama Bulan Bahasa di tingkat SMP antara lain: Lomba Menul...
+            </p>
+        </div>
+    </div>
 </body>
 	<br>
 	<br>
